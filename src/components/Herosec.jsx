@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// Import all image assets
+// Import all image 
 import des1 from '../assets/des1.webp';
 import des2 from '../assets/des2.webp';
 import des3 from '../assets/des3.webp';
