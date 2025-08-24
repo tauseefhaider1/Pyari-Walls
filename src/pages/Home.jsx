@@ -34,7 +34,7 @@ const Home = () => {
         
         {/* Single ProductCard section */}
         <div className="mt-8 container mx-auto">
-          <ProductCard />
+          {/* <ProductCard /> */}
         </div>
       </main>
         <div className="flex items-center justify-center gap-3 text-center mx-auto">

@@ -11,7 +11,7 @@ import img6 from '../assets/Capture6.PNG';
 const Carousel = () => {
   const reviews = [
     {
-      id: 1,
+      id: 1, 
       image: img1,
       name: "John Doe",
       review: "This product is amazing! I love the quality and the design.",

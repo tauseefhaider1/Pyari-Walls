@@ -93,34 +93,35 @@ const Herosec = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-2xl font-bold text-center mb-8">Our Collections</h1>
-      
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-items-center">
-        {design.map((item) => (
-          <Link
-            to="/pc"
-            state={{ category: item.category, title: item.title }}
-            key={item.id}
-            className="flex flex-col items-center group"
-          >
-            <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden shadow-lg border-2 border-gray-200 group-hover:scale-105 transition-transform duration-300">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover"
-                // onError={(e) => {
-                //   e.target.src = 'https://via.placeholder.com/150';
-                // }}
-              />
-            </div>
-            <p className="mt-2 text-sm font-medium text-center group-hover:text-blue-500 transition-colors">
-              {item.title}
-            </p>
-          </Link>
-        ))}
-      </div>
-    </div>
+   <div className="container mx-auto px-4 py-12">
+  <h1 className="text-2xl font-bold text-center mb-8">Our Collections</h1>
+  
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 justify-items-center">
+    {design.map((item) => (
+      <Link
+        to="/pc"
+        state={{ category: item.category, title: item.title }}
+        key={item.id}
+        className="flex flex-col items-center group"
+      >
+        {/* Square image box */}
+        <div className="w-40 h-40 sm:w-44 sm:h-44 overflow-hidden shadow-lg border border-gray-300 group-hover:scale-105 transition-transform duration-300">
+          <img
+            src={item.image}
+            alt={item.title}
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Title under image */}
+        <p className="mt-2 text-sm font-medium text-center group-hover:text-blue-500 transition-colors">
+          {item.title}
+        </p>
+      </Link>
+    ))}
+  </div>
+</div>
+
   );
 };
 
