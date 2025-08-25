@@ -2,7 +2,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-    base: '/my-project/', 
-
+  base: '/',   // <-- correct for Vercel root
   plugins: [react()],
 })
